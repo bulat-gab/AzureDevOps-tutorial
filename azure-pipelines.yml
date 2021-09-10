@@ -14,4 +14,6 @@ variables:
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration) ./src/AzureDevOpsSample/
-  displayName: 'dotnet build $(buildConfiguration)'
+  displayName: 'dotnet build $(buildConfiguration) ./src/AzureDevOpsSample/'
+- script: dotnet test ./src/AzureDevOpsSample/
+  displayName: '$ dotnet test ./src/AzureDevOpsSample/'
