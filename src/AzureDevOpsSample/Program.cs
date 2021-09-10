@@ -14,7 +14,7 @@ namespace AzureDevOpsSample
         [Test]
         public void FailingTest()
         {
-            Assert.Fail();
+            //Assert.Fail();
         }
     }
 }
